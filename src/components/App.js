@@ -54,7 +54,7 @@ const App = () => {
           {showName && <p className="error-message" style={{color: "red"}}>Name is required</p>}
           <p>Email:</p>
           <input id="email" type="email" value={email} onChange={(e) => handleEmail(e)}/>
-          {showEmailError && <p className="error-message" style={{color: "red"}}>Invalid Email</p>}
+          {showEmailError && <p className="error-message" style={{color: "red"}}>Invalid email format</p>}
           <p>Password:</p>
           <input id="password" type="password" value={password} onChange={(e) => handlePassword(e)}/>
           {showPassword && <p className="error-message" style={{color: "red"}}>Password must be at least 6 characters</p>}
